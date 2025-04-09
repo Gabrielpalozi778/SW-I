@@ -7,11 +7,11 @@
 </head>
 <body>
     <ul>
-    <?php
-        for ($i=1; $i <= 10 ; $i++) { 
-            echo "<li>item $i</li>";
-        }    
-    ?>
+     <?php
+         for ($i=1; $i <= 10 ; $i++) { 
+             echo "<li>item $i</li>";
+         }    
+     ?>
     </ul>   
     
 </body>
