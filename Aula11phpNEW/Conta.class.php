@@ -17,38 +17,37 @@
     return $this->Nome;
    }
    public function setNome($Nome){
-    return $this->Nome;
+    return  $this->Nome = $nome;
    }
    public function getPreco(){
     return $this->Preco;
    }
    public function setPreco($Nome){
-    return $this->Nome;
+    return $this->Valor = $Preco;
    }
    public function adicionarEstoque($qtd){
-    return $this->qtd;
-   }
+    if ($qtd > 0) {
+        $this->Quantidade += $qtd;
+    } else {
+        echo 'Não pode ser negativo ou igual a zero!';
+    }
+    }
    public function removerEstoque($qtd){
-    return $this->qtd;
-   }
-   public function mostrarDetalhes(){
-    return $this->Nome;
-   }
-
-
-
-
-
-
-
+    if ($qtd > 0) {
+        $this->Quantidade -= $qtd;
+     } else {
+        echo 'Não pode ser negativo ou igual a zero!';
+    }
+    public function mostrarDetalhes(){
+        echo "Nome: " . $this->Nome . "<br>";
+        echo "Valor: R$" . number_format($this->Valor, 2, ",", ".") . "<br>";
+        echo "Quantidade: " . $this->Quantidade . "<hr>";
+    }
 }
 
-   
-   
 
 
 
 
 
-
-?>
+   }

@@ -1,13 +1,13 @@
 <?php
-  include_once 'conta.class.php';
-  $a = new Produto("Processador I7",1700.00,23);
-  $a-> adicionarEstoque(23);
-  $a-> removerEstoque(23);
-  echo "Produto: " . $a->getNome();
-  echo "Preço: " . $a->getPreco();
-  echo "Estoque: " . $a->getqtd();
+  include_once 'Produto.class.php';
 
+  $nome = $_POST['nome'];
+  $valor = $_POST['valor'];
+  $quantidade = $_POST['quant'];
 
-
+  $produto1 = new Produto($nome, $valor, $quant);
+  $produto1->adicionarEstoque(5);
+  $produto1->removerEstoque(3);
+  $produto1->mostrarDetalhes();
 
 ?>
