@@ -6,8 +6,8 @@
   $quantidade = $_POST['quant'];
 
   $produto1 = new Produto($nome, $valor, $quant);
-  $produto1->adicionarEstoque(5);
-  $produto1->removerEstoque(3);
-  $produto1->mostrarDetalhes();
+  $produto1->AdicionarEstoque(5);
+  $produto1->RemoverEstoque(3);
+  $produto1->MostrarDetalhes();
 
 ?>
