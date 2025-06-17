@@ -20,9 +20,9 @@ class Aluno{
     public function get_nota2(){
         return $this->$Nota2;
     }
-    public function get_media(){
-        $media = ($Nota1 + $Nota2) / 2;
-        echo'Sua média é '. $media;
+   
+    public function calcularMedia() {
+        return ($this->Nota1 + $this->Nota2) / 2;
     }
     public function verificarSituacao(){
         if ($media < 7){
