@@ -1,6 +1,6 @@
 <?php
     $host = 'localhost';
-    $dbname = 'loja';
+    $dbname = 'sistema';
     $user = 'root';
     $pass = '';
     try {
